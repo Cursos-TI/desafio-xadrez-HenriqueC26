@@ -56,6 +56,19 @@
             b++;
     
         } while( b <= 5);
+
+            //Movimentação do cavalo 2 casas para baixo e 1 casa para a esquerda.
+    int movimentoCompleto = 1;
+    printf("Movimento do Cavalo\n");
+
+    while (movimentoCompleto--)
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+    }
     
         return 0;
     }

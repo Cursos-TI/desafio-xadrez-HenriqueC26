@@ -48,14 +48,19 @@
     
             //Movimentação do bispo 5 casas na diagonal para cima e à direita.
     
-            int b = 1;
-            printf("Movimentação do Bispo.\n");
-    
-        do {
-            printf("Cima, Direita\n", b);
-            b++;
-    
-        } while( b <= 5);
+            int movimentacaoBispo(int b) {
+                if (b > 5) {
+                   return;  // Condição de parada
+                }
+                printf("Cima, Direita\n");
+                movimentacaoBispo(b + 1); // Chamada recursiva
+               
+            }
+                {
+        
+                    printf("Movimentação do Bispo.\n");
+                    movimentacaoBispo(1); // Inicia a movimentação com b = 1
+            }
 
             //Movimentação do cavalo 2 casas para baixo e 1 casa para a esquerda.
     int movimentoCompleto = 1;
